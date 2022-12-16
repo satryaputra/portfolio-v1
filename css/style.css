@@ -1,0 +1,662 @@
+
+/* Fonts */
+
+@font-face {
+    font-family: 'Lulo Clean Bold';
+    src: url(../fonts/Lulo-Clean-W01-One-Bold.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Avenir Heavy';
+    src: url(../fonts/Avenir-Heavy.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Avenir Light';
+    src: url(../fonts/Avenir-Light.woff2) format('woff2');
+}
+
+/* Reset CSS & Prepare */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Avenir Light', sans-serif;
+    scroll-behavior: smooth;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family: 'Lulo Clean Bold', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2b2b2b;
+}
+
+h3 {
+    font-family: 'Avenir Heavy', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2b2b2b;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    background-color: white;
+}
+
+.navbar .container {
+    max-width: 65%;
+    margin: auto;
+}
+
+.navbar.active {
+    box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.navbar .box-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 30px 0;
+}
+
+.navbar .menu-navbar ul {
+    display: flex;
+}
+
+.navbar .menu-navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+}
+
+.navbar .menu-navbar ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #2b2b2b;
+    letter-spacing: 2px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.navbar .menu-navbar ul li .itemNavbar:hover {
+    color: #1938d1;
+}
+
+/* .navbar .menu-navbar ul li .itemNavbar.current, .navbar .menu-navbar ul li .itemNavbar:hover {
+    color: #1938d1;
+} */
+
+.navbar .icon-menu {
+    display: none;
+}
+
+.navbar .icon-menu .menu-bar {
+    font-size: 24px;
+}
+
+/* Home */
+
+.home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.home .container {
+    max-width: 65%;
+    margin: auto;
+}
+
+.home .text p {
+    font-family: 'Avenir Heavy', sans-serif;
+    font-size: 53px;
+    color: #1938d1;
+    
+}
+
+/* About */
+
+.about {
+    width: 100%;
+}
+
+.about .container {
+    background-color: #155de9;
+    height: 728px;
+    display: flex;
+}
+
+.about .wrapper-card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .wrapper-card .card {
+    width: 455px;
+    height: 516px;
+    background-color: #f7fcff;
+    padding: 60px;
+    box-shadow: -15px 15px 0 1.5px rgba(0,0,0,.1), -30px 30px 0 1.5px rgba(0,0,0,.05);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.about .wrapper-card .card .text {
+    line-height: 20px;
+    color: #2b2b2b;
+}
+
+.about .wrapper-card .card .downloadCV {
+    margin-top: 30px;
+}
+
+.about .wrapper-card .card .downloadCV button {
+    background-color: #2b2b2b;
+    height: 40px;
+    width: 248px;
+    border: none;
+    color: #f7fcff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.about .wrapper-card .card .downloadCV button:hover {
+    box-shadow: -5px 5px 5px 1.5px rgba(0,0,0,.25), -10px 10px 5px 1.5px rgba(0,0,0,.1);
+    transform: scaleX(1.05) scaleY(1.05);
+    -webkit-transform: scaleX(1.05) scaleY(1.05);
+    -moz-transform: scaleX(1.05) scaleY(1.05);
+    -ms-transform: scaleX(1.05) scaleY(1.05);
+    -o-transform: scaleX(1.05) scaleY(1.05);
+}
+
+/* What I Do */
+
+.whatIDo {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.whatIDo .container {
+    width: 55%;
+    padding-top: 80px;
+    margin: auto;
+}
+
+.whatIDo .header {
+    margin-bottom: 60px;
+}
+
+.whatIDo .header h1 {
+    font-size: 20px;
+}
+
+.whatIDo .list-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.whatIDo .list-items .tittle-item {
+    margin-bottom: 20px;
+
+}
+
+.whatIDo .list-items .list {
+    display: flex;
+    width: 80%;
+}
+
+.whatIDo .list-items .list .bullets .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.whatIDo .list-items .list .bullets .bullet.big {
+    width: 15px;
+    height: 15px;
+    margin: -2px 0 0 -3px;
+    background-color: #155de9;
+}
+
+.whatIDo .list-items .list .bullets .line {
+    width: 3px;
+    height: 60px;
+    background-color: #2b2b2b;
+    margin: -5px 0 0 3.9px;
+}
+
+.whatIDo .list-items .list .bullets .line.gradient {
+    height: 70px;
+    background: linear-gradient(to bottom, #2b2b2b, #155de9)
+}
+
+.whatIDo .list-items .list .texts p {
+    margin: -6px 0 50px 15px;
+    color: #4d4d4d;
+}
+
+.whatIDo .list-items .list .texts p.now {
+    margin-top: -20px;
+    font-family: 'Avenir Heavy', sans-serif;
+    font-size: 18px;
+}
+
+.whatIDo .list-items .item:nth-child(2) {
+    margin-left: 50px;
+}
+
+.whatIDo .list-items .item:nth-child(2) .list .texts p:nth-child(1) {
+    margin: -6px 0 30px 15px;
+}
+
+.whatIDo .list-items .item:nth-child(2) .list .texts p {
+    margin: -6px 0 48px 15px;
+}
+
+.whatIDo .list-items .item:nth-child(2) .list .texts p:nth-child(5) {
+    margin-top: -25px;
+}
+
+.whatIDo .list-items .item:nth-child(2) .list .texts p.now {
+    margin-top: 50px;
+}
+
+/* Contact */
+
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #155de9;
+    margin-top: -6px;
+}
+
+.contact .container{
+    width: 50%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .text p{
+    font-family: 'Lulo Clean Bold', sans-serif;
+    color: #f7fcff;
+    font-size: 20px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+}
+
+.contact .form-contact form table tr td input,
+.contact .form-contact form table tr td textarea {
+    padding: 5px 5px 5px 10px;
+    font-size: 16px;
+    border: none;
+    margin: 2.5px 0 2.5px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 100%;
+}
+
+.contact .form-contact form table tr:nth-child(1) td:nth-child(1) {
+    padding-right: 2.5px;
+}
+
+.contact .form-contact form table tr:nth-child(1) td:nth-child(2) {
+    padding-left: 2.5px;
+}
+
+.contact .form-contact form table tr td button {
+    width: 100px;
+    height: 30px;
+    font-family: "Lulo Clean Bold", sans-serif;
+    font-size: 12px;
+    color: #155de9;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer{
+    width: 100%;
+    height: 30px;
+    background-color: #114abe;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: white;
+}
+
+.footer a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ? Rensponsive */
+@media screen and (max-width: 1150px) {
+.about .banner {
+    width: 60%;
+    margin-left: -120px;
+    }
+
+    .whatIDo .list-items .list .bullets .line{
+        height: 90px;
+    }
+
+    .whatIDo .list-items .list .bullets .line.gradient{
+        height: 70px;
+    }
+
+    .whatIDo .list-items .item:nth-child(2) .list .bullets .line{
+        height: 70px;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .navbar .icon-menu{
+        display: inline-block;
+        margin-top: -7px;
+    }
+
+    .navbar .menu-navbar {
+        display: none;
+    }
+
+    .home .text p {
+        font-size: 40px;
+    }
+
+    .about .container {
+        width: 100%;
+    }
+
+    .about .banner {
+        width: 50%;
+        margin-left: -120px;
+    }
+
+    .about .wrapper-card .card {
+        margin-right: -200px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        width: 400px;
+        padding: 40px;
+    }   
+}
+
+@media screen and (max-width: 900px) {
+    .about .banner img {
+        margin-left: -80px;
+    } 
+
+    .about .wrapper-card .card {
+        width: 370px;
+        height: 480px;
+    }
+
+    .about .wrapper-card .card .text {
+        line-height: 16px;
+    }
+
+    .about .wrapper-card .card .downloadCV button {
+        width: 180px;
+    }
+
+    .whatIDo .list-items .list .bullets .line{
+        height: 100px;
+    }
+
+    .whatIDo .list-items .list .bullets .line.gradient{
+        height: 90px;
+    }
+
+    .whatIDo .list-items .item:nth-child(2) .list .bullets .line{
+        height: 90px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .logo h1 {
+        font-size: 14px;
+    }
+
+    .navbar .icon-menu .menu-bar {
+        font-size: 20px;
+    }
+    
+    .home .text p {
+        font-size: 34px;
+    }
+
+    .about .wrapper-card .card {
+        width: 320px;
+        height: 450px;
+    }
+
+    .about .banner img {
+        margin-left: -100px;
+    }   
+
+    .about .wrapper-card .card .text {
+        line-height: 16px;
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+    .about .wrapper-card .card .downloadCV button {
+        width: 150px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        font-size: 14px;
+        margin-top: -50px;
+}
+
+    .about .banner {
+        width: 50%;
+    }
+
+    .whatIDo .list-items .list .bullets .line{
+        height: 120px;
+    }
+
+    .whatIDo .list-items .list .bullets .line.gradient{
+        height: 110px;
+    }
+
+    .whatIDo .list-items .item:nth-child(2) .list .bullets .line{
+        height: 90px;
+    }
+
+    .contact .text p{
+        font-size: 16px;
+    }
+
+    .contact .container {
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .home .text p {
+        font-size: 30px;
+    }
+    .navbar .icon-menu{
+        display: inline-block;
+        margin-top: -4px;
+    }
+
+}
+
+@media screen and (max-width: 660px) {
+    .about {
+        display: flex;
+    }
+    
+    .about .container {
+        flex-direction: column;
+        background-color: white;
+        overflow: hidden;
+    }
+
+    .about .banner {
+        height: 50%;
+        margin-left: 70px;
+    }
+    
+    .about .banner img {
+        margin-top: -200px;
+    }
+
+    .about .card {
+        margin-left: 130px;
+    }
+
+    .about .wrapper-card {
+        position: absolute;
+        margin-top: 275px;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .home .text p {
+        font-size: 28px;
+    }
+
+    .about .banner img{
+        margin-left: -230px;
+    }
+
+    .about .card {
+        margin-left: 50px;
+    }
+
+    .whatIDo .list-items {
+        flex-direction: column;
+    }
+
+    .whatIDo .list-items .item:nth-child(2) {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar .logo h1 {
+        font-size: 9px;
+    }
+
+    .navbar .icon-menu{
+        display: inline-block;
+        margin-top: -4px;
+    }
+
+    .navbar .icon-menu .menu-bar {
+        font-size: 16px;
+    }
+
+    .home .text p {
+        font-size: 24px;
+    }
+
+    .about .banner img {
+        margin-left: -280px;
+    }
+
+    .about .card {
+        margin-left: 0;
+    }
+
+    .contact .text p{
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .home .text p {
+        font-size: 22px;
+    }
+
+    .about .banner img{
+        margin-left: -300px;
+    }
+
+    .about .wrapper-card .card {
+        width: 260px;
+        height: 450px;
+        margin-left: -25px;
+        padding: 35px 35px 70px 35px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        box-shadow: -5px 5px 5px 3px rgba(0,0,0,.2);
+}
+    
+    .about .wrapper-card .card .text {
+        line-height: 14px;
+        font-size: 12px;
+    }
+
+    .about .wrapper-card .card .downloadCV {
+        text-align: center;
+    }
+
+    .whatIDo .list-items .list .bullets .line{
+        height: 120px;
+    }
+
+    .whatIDo .list-items .list .bullets .line.gradient{
+        height: 110px;
+    }
+
+    .whatIDo .list-items .item:nth-child(2) .list .bullets .line{
+        height: 80px;
+    }
+}
