@@ -211,6 +211,7 @@ h3 {
 }
 
 .whatIDo .header h1 {
+    padding-top: 30px;
     font-size: 20px;
 }
 
@@ -360,6 +361,7 @@ h3 {
     align-items: center;
     padding: 5px;
     color: white;
+    height: 100%;
 }
 
 .footer a{
